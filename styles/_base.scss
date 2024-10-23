@@ -1,0 +1,8 @@
+@use "variables";
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: variables.$color-slate-800;
+  font-family: variables.$font-primary;
+}
