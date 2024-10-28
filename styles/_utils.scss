@@ -1,0 +1,23 @@
+@mixin grid($type) {
+  display: grid;
+
+  @if $type == "page" {
+    grid-template-columns: repeat(12, 1fr);
+  } @else if $type == "section" {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin-inline: 0.5rem;
+  }
+}
+
+@mixin breakpoint($size) {
+  @if $size == "md" {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $size == "lg" {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}
