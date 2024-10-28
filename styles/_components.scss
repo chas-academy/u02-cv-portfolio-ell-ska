@@ -3,6 +3,7 @@
 
 @mixin card {
   container-type: inline-size;
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -13,7 +14,7 @@
     object-fit: cover;
   }
 
-  div {
+  footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,5 +34,31 @@
 
   .price {
     @include typography.medium(700);
+  }
+
+  .tag {
+    @include tag(outline);
+    position: absolute;
+    top: 0.5rem;
+    left: -1px;
+  }
+}
+
+@mixin tag($variant: fill, $size: medium) {
+  padding: 0.25rem 0.75rem;
+
+  @if $variant == "fill" {
+    background-color: variables.$color-slate-800;
+    color: variables.$color-white;
+  } @else if $variant == "outline" {
+    background-color: variables.$color-white;
+    border: variables.$border;
+    color: variables.$color-slate-800;
+  }
+
+  @if $size == "medium" {
+    @include typography.medium;
+  } @else if $size == "small" {
+    @include typography.tiny;
   }
 }
