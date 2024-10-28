@@ -6,7 +6,6 @@
   } @else if $type == "section" {
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
-    margin-inline: 0.5rem;
   }
 }
 

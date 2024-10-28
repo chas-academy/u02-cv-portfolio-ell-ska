@@ -68,3 +68,25 @@
     min-height: calc(100svh - 1rem);
   }
 }
+
+.trending {
+  margin: 2rem 0.5rem 0;
+
+  h2 {
+    @include typography.heading;
+    margin-bottom: 0.5rem;
+  }
+
+  .products {
+    @include utils.grid(section);
+  }
+
+  .product {
+    @include components.card;
+    grid-column: span 2;
+
+    @include utils.breakpoint(md) {
+      grid-column: span 1;
+    }
+  }
+}
