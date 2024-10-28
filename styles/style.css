@@ -173,6 +173,7 @@ header nav span {
 }
 .featured .product {
   container-type: inline-size;
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -184,7 +185,7 @@ header nav span {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.featured .product div {
+.featured .product footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -193,7 +194,7 @@ header nav span {
   border-top: 1px #1e293b solid;
 }
 @container (min-width: 256px) {
-  .featured .product div {
+  .featured .product footer {
     flex-direction: row;
     padding: 0.75rem 2rem;
   }
@@ -209,6 +210,19 @@ header nav span {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+.featured .product .tag {
+  padding: 0.25rem 0.75rem;
+  background-color: #fff;
+  border: 1px #1e293b solid;
+  color: #1e293b;
+  font-style: normal;
+  font-weight: regular;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  position: absolute;
+  top: 0.5rem;
+  left: -1px;
 }
 
 .trending {
@@ -228,6 +242,7 @@ header nav span {
 }
 .trending .product {
   container-type: inline-size;
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -239,7 +254,7 @@ header nav span {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.trending .product div {
+.trending .product footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -248,7 +263,7 @@ header nav span {
   border-top: 1px #1e293b solid;
 }
 @container (min-width: 256px) {
-  .trending .product div {
+  .trending .product footer {
     flex-direction: row;
     padding: 0.75rem 2rem;
   }
@@ -264,6 +279,19 @@ header nav span {
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+.trending .product .tag {
+  padding: 0.25rem 0.75rem;
+  background-color: #fff;
+  border: 1px #1e293b solid;
+  color: #1e293b;
+  font-style: normal;
+  font-weight: regular;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  position: absolute;
+  top: 0.5rem;
+  left: -1px;
 }
 @media (min-width: 768px) {
   .trending .product {
