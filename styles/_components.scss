@@ -1,0 +1,28 @@
+@use "variables";
+@use "typography";
+
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  border: variables.$border;
+
+  img {
+    flex-grow: 1;
+    object-fit: cover;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 2rem;
+    border-top: variables.$border;
+  }
+
+  .name {
+    @include typography.large;
+  }
+
+  .price {
+    @include typography.medium(700);
+  }
+}

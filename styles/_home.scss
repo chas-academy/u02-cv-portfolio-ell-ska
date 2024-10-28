@@ -1,6 +1,7 @@
 @use "variables";
 @use "typography";
 @use "utils";
+@use "components";
 
 .hero {
   @include utils.grid(page);
@@ -49,5 +50,21 @@
       grid-column: span 8;
       grid-row: span 2;
     }
+  }
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.5rem 0.5rem 0;
+
+  @include utils.breakpoint(md) {
+    flex-direction: row;
+  }
+
+  .product {
+    @include components.card;
+    min-height: calc(100svh - 1rem);
   }
 }

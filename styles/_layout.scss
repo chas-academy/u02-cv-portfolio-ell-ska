@@ -12,7 +12,7 @@ header {
     justify-content: space-between;
     margin: 0.5rem;
     padding: 0.75rem 2rem;
-    border: 1px variables.$color-slate-800 solid;
+    border: variables.$border;
     background-color: variables.$color-white-20;
     backdrop-filter: blur(12px);
 
