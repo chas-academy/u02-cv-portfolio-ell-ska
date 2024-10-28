@@ -29,5 +29,9 @@ header {
   nav {
     display: flex;
     gap: 1rem;
+
+    span {
+      @include utils.sr-only();
+    }
   }
 }
