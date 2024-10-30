@@ -1,5 +1,16 @@
 @use "variables";
 
+:focus,
+:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid variables.$color-accent;
+  outline-offset: 1px;
+}
+
+::selection {
+  background-color: variables.$color-accent-20;
+}
+
 body {
   display: flex;
   flex-direction: column;
