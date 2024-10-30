@@ -1,6 +1,33 @@
 @use "variables";
 @use "typography";
 
+@mixin button {
+  @include typography.large;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background-color: variables.$color-slate-800;
+  color: variables.$color-white;
+  white-space: nowrap;
+  transition: variables.$transition;
+
+  &:hover {
+    background-color: variables.$color-slate-700;
+  }
+}
+
+@mixin input {
+  padding: 0.5rem 1rem;
+  border: variables.$border;
+  background-color: variables.$color-white;
+  color: variables.$color-slate-800;
+
+  &::placeholder {
+    color: variables.$color-slate-500;
+  }
+}
+
 @mixin card {
   container-type: inline-size;
   position: relative;

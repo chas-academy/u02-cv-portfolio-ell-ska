@@ -65,13 +65,13 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
-header {
+.header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   position: absolute;
   width: 100%;
 }
-header > div {
+.header > div {
   grid-column: 1/-1;
   display: flex;
   justify-content: space-between;
@@ -83,21 +83,21 @@ header > div {
           backdrop-filter: blur(12px);
 }
 @media (min-width: 1024px) {
-  header > div {
+  .header > div {
     grid-column: span 4;
     margin: 2rem;
   }
 }
-header a {
+.header a {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
-header nav {
+.header nav {
   display: flex;
   gap: 1rem;
 }
-header nav span {
+.header nav span {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -107,6 +107,80 @@ header nav span {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0.5rem 0.5rem;
+}
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+  }
+}
+.footer .newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.footer .newsletter p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  flex-grow: 1;
+}
+.footer .newsletter form {
+  display: flex;
+}
+.footer .newsletter input {
+  padding: 0.5rem 1rem;
+  border: 1px #1e293b solid;
+  background-color: #fff;
+  color: #1e293b;
+  flex-grow: 1;
+}
+.footer .newsletter input::-moz-placeholder {
+  color: #64748b;
+}
+.footer .newsletter input::placeholder {
+  color: #64748b;
+}
+.footer .newsletter button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background-color: #1e293b;
+  color: #fff;
+  white-space: nowrap;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer .newsletter button:hover {
+  background-color: #334155;
+}
+.footer .navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer .navigation nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .navigation .disclaimer {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .hero {
