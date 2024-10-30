@@ -9,19 +9,12 @@
   </head>
   <body>
     <header class="header">
-      <div>
-        <a href="/">acotar</a>
-        <nav>
-          <button>
-            <span>go to cart</span>
-            <img src="assets/icons/shopping-basket.svg" alt="shopping basket" />
-          </button>
-          <button>
-            <span>open menu</span>
-            <img src="assets/icons/menu.svg" alt="menu" />
-          </button>
-        </nav>
-      </div>
+      <a href="/">acotar</a>
+      <nav>
+        <a href="#featured">featured</a>
+        <a href="#trending">trending</a>
+        <a href="#latest-drops">latest drops</a>
+      </nav>
     </header>
     <main>
       <section class="hero">
@@ -31,7 +24,7 @@
         <img src="assets/images/hero-3.jpg" alt="women in suits" />
       </section>
 
-      <section class="featured">
+      <section class="featured" id="featured">
         <article class="product">
           <img src="assets/images/featured-1.jpg" alt="elain suit" />
           <footer>
@@ -49,7 +42,7 @@
         </article>
       </section>
 
-      <section class="trending">
+      <section class="trending" id="trending">
         <h2>trending</h2>
         <section class="products">
           <article class="product">
@@ -89,7 +82,7 @@
         </section>
       </section>
 
-      <section class="latest-drops">
+      <section class="latest-drops" id="latest-drops">
         <video autoplay muted loop>
           <source src="assets/videos/latest-drops.mp4" type="video/mp4" />
         </video>
