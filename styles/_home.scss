@@ -8,6 +8,7 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 1px;
   min-height: 100svh;
+  border-bottom: variables.$border;
   background-color: variables.$color-slate-800;
 
   h1 {

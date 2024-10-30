@@ -205,6 +205,7 @@ body {
   grid-template-rows: repeat(2, 1fr);
   gap: 1px;
   min-height: 100svh;
+  border-bottom: 1px #1e293b solid;
   background-color: #1e293b;
 }
 .hero h1 {
