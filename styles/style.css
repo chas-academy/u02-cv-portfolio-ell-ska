@@ -68,7 +68,8 @@ body {
 .header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   width: 100%;
 }
 .header > div {
