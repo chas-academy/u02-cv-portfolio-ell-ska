@@ -263,7 +263,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin: 0.5rem 0.5rem 0;
+  padding-top: 0.5rem;
+  margin-inline: 0.5rem;
 }
 @media (min-width: 768px) {
   .featured {
@@ -325,7 +326,8 @@ body {
 }
 
 .trending {
-  margin: 2rem 0.5rem 0;
+  padding-top: 2rem;
+  margin-inline: 0.5rem;
 }
 .trending h2 {
   font-style: normal;
