@@ -58,6 +58,21 @@ li {
   list-style: none;
 }
 
+:focus,
+:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid #ff5a84;
+  outline-offset: 1px;
+}
+
+::-moz-selection {
+  background-color: rgba(255, 90, 132, 0.2);
+}
+
+::selection {
+  background-color: rgba(255, 90, 132, 0.2);
+}
+
 body {
   display: flex;
   flex-direction: column;
