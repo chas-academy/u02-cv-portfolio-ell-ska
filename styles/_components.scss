@@ -54,6 +54,9 @@
     background-color: variables.$color-white;
     border: variables.$border;
     color: variables.$color-slate-800;
+  } @else if $variant == "gradient" {
+    background: linear-gradient(45deg, #cdc3ff, #aac9ff);
+    color: variables.$color-slate-800;
   }
 
   @if $size == "medium" {

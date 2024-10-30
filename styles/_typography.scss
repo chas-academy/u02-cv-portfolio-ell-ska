@@ -5,28 +5,28 @@
   line-height: 2rem;
 }
 
-@mixin large($weight: regular) {
+@mixin large($weight: normal) {
   font-style: normal;
   font-weight: $weight;
   font-size: 1.125rem;
   line-height: 1.5rem;
 }
 
-@mixin medium($weight: regular) {
+@mixin medium($weight: normal) {
   font-style: normal;
   font-weight: $weight;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-@mixin small($weight: regular) {
+@mixin small($weight: normal) {
   font-style: normal;
   font-weight: $weight;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-@mixin tiny($weight: regular) {
+@mixin tiny($weight: normal) {
   font-style: normal;
   font-weight: $weight;
   font-size: 0.75rem;

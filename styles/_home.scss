@@ -90,3 +90,56 @@
     }
   }
 }
+
+.latest-drops {
+  position: relative;
+  margin-top: 2rem;
+
+  video {
+    height: 100svh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 32rem;
+    width: 100%;
+    padding-inline: 0.5rem;
+  }
+
+  h2 {
+    @include typography.large(700);
+    margin-bottom: 0.5rem;
+  }
+
+  table {
+    width: 100%;
+    border: variables.$border;
+    background-color: variables.$color-white-60;
+    backdrop-filter: blur(12px);
+    border-spacing: 0.5rem 1rem;
+
+    th[scope="col"] {
+      @include typography.small(bold);
+    }
+
+    th[scope="row"],
+    td {
+      @include typography.tiny();
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .tag {
+      @include components.tag(fill, small);
+    }
+
+    .gradient {
+      @include components.tag(gradient, small);
+    }
+  }
+}
